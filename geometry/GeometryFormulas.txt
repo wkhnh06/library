@@ -1,0 +1,20 @@
+Polygon's Area: (A.x - B.x) * (A.y + B.Y) / 2
+Radium to Degree: 1 rad -> 180 / pi degrees (~57)
+Pi: pi = acos(-1)
+Point Rotation: x = x * cos( 0 ) - y * sin( 0 )
+                y = x * sin( 0 ) + y * cos( 0 )
+CCW: (B.x - A.x) * (B.y - P.y) - (B.y - A.y) * (B.x - P.x) (ax * by - ay * bx)
+    Nếu nhỏ hơn 0, điểm P bên trái
+    Nếu bằng 0, điểm P thẳng hàng
+    Nếu lớn hơn 0, điểm P bên phải
+Sorting Points: bool compare(iii x){
+                    if (x.fi.se > 0)
+                        return 1;
+                    else if (x.fi.se == 0 && x.fi.fi > 0)
+                        return 1;
+                    return 0;
+                }
+                bool cmp(iii a, iii b){
+                    if (compare(a) != compare(b)) return compare(a) > compare(b);
+                    return ccw( { 0, 0, 0 }, a, b) > 0;
+                }

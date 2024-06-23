@@ -1,0 +1,20 @@
+Công thức chia kẹo Euler: ( n - 1 ) C ( m - n * ( k - 1 ) - 1 ) ( n là số người, m là số kẹo, k là số kẹo tối thiểu mà ai nào cx có )
+Mod inverse: a * b ^ ( mod - 2 ) ( mod nguyên tố )
+Wilson's theorem: p là số nguyên tố khi (p - 1)! + 1 chia hết cho p
+Euler's product formula: n * ( 1 - 1 / p1 ) * ( 1 - 1 / p2 )...( 1 - 1 / pr )
+Euler's theorem: a ^ ( phi( n ) ) = 1 (mod n)( gcd( a, n ) = 1)
+Lagrange: Để tính P(x) là một đa thức bậc k, để tính với x bất kỳ thì cần biết ít nhất k + 1 giá trị p(x1) = y1,..., p(xk) = yk thì khi đó
+đáp án sẽ là ( x - xj ) / ( xk - xj ) với mọi j, k (for k rồi for j)
+Catalan number  Cn = 1 / (n + 1) * (n) C (2n)
+                c0 = 1 và cn + 1 = ci * cn-i với i = 0 -> n
+Chinese Remainder theorem:
+x = a1 ( mod m1 )
+x = a2 ( mod m2 )
+...
+x = ak ( mod mk )
+
+(gcd( mi, mj ) = 1)
+
+M1 = m / m1, M2 = m / m2, ... Mk = m / mk
+y1 = (1 / M1) ( mod m1 ), y2 = ( 1 / M2 ) ( mod m2 ), yk = ( 1 / Mk ) ( mod mk )
+x = a1 * M1 * y1 + a2 * M2 * y2 + ... + ak * Mk * yk ( mod M )
